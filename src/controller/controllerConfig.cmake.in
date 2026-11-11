@@ -1,0 +1,14 @@
+# - Config file for the controller package
+# It defines the following variables
+#  controller_INCLUDE_DIRS - include directories for FooBar
+#  controller_LIBRARIES    - libraries to link against
+#  controller_EXECUTABLE   - the bar executable
+
+set(controller_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("${controller_DIR}/export_controller.cmake")
+
+# These are IMPORTED targets created by controllerTargets.cmake
+
+
